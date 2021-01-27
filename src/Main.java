@@ -6,7 +6,7 @@ import factory.Tray;
 public class Main {
 
     public static void main(String[] args) {
-        Factory factory = Factory.getFactory("listfactory.ListFactory");
+        Factory factory = Factory.getFactory(args[0]);
 
         Link qiita = factory.createLink("Qiita", "https://qiita.com//");
         Link dot = factory.createLink("ドットインストール", "https://dotinstall.com/");
